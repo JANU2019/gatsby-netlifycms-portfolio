@@ -9,7 +9,7 @@ const Image = props => (
         images: allFile {
           edges {
             node {
-              relativePath
+              absolutePath
               name
               childImageSharp {
                 sizes(maxWidth: 600) {
@@ -23,7 +23,7 @@ const Image = props => (
     `}
     render={data => {
       const image = data.images.edges.find(n => {
-        return n.node.relativePath.includes(props.filename)
+        return n.node.absolutePath.includes(props.filename)
       })
       if (!image) {
         return null

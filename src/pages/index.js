@@ -15,8 +15,8 @@ class BlogIndex extends React.Component {
           {posts.map(({ node }) => {
             console.log(node.frontmatter.logotipas)
             return (
-              <div key={node.fields.slug}>
-                <Image filename={node.frontmatter.filename} />
+              <div key={node.frontmatter.date}>
+                <Image filename={node.frontmatter.logotipas} />
               </div>
             )
           })}
@@ -39,15 +39,9 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
-          fields {
-            slug
-          }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
-            title
-            description
             logotipas
-            filename
           }
         }
       }
