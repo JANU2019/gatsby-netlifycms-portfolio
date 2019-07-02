@@ -6,3 +6,9 @@ html {
   margin: 0 auto;
   width: var(--container-width);
 }
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
