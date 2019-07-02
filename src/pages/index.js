@@ -1,7 +1,6 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-
-import { Layout, SEO } from "@components"
+import { graphql } from "gatsby"
+import { Layout, SEO, Image } from "@components"
 
 class BlogIndex extends React.Component {
   render() {
@@ -14,10 +13,10 @@ class BlogIndex extends React.Component {
         <SEO title="All posts" />
         <div className="portfolio-grid">
           {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
+            console.log(node.frontmatter.logotipas)
             return (
               <div key={node.fields.slug}>
-                <p>p</p>
+                <Image filename={node.frontmatter.filename} />
               </div>
             )
           })}
@@ -48,6 +47,7 @@ export const pageQuery = graphql`
             title
             description
             logotipas
+            filename
           }
         }
       }
