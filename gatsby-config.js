@@ -70,9 +70,15 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        fonts: [
+          {
+            family: `Roboto Slab`,
+            subsets: [`latin`],
+            variants: ["400", "700"],
+          },
+        ],
       },
     },
   ],

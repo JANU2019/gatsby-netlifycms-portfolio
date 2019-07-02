@@ -1,0 +1,16 @@
+:root {
+  /* breakpoints */
+  --mobile: 720px;
+  --small: 800px;
+  --medium: 1200px;
+  --large: 1300px;
+
+  --container-width: 80%;
+
+  /* colors */
+  --black: #000000;
+  --light-grey: #9f9f9f;
+
+  --main-font: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Roboto",
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
