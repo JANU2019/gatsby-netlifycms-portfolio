@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
           {posts.map(({ node }) => {
             console.log(node.frontmatter.logotipas)
             return (
-              <div key={node.frontmatter.date}>
+              <div key={node.frontmatter.logotipas}>
                 <Image filename={node.frontmatter.logotipas} />
               </div>
             )
