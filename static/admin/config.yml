@@ -14,9 +14,6 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Failo pavadinimas", name: "filename", widget: "string" }
       - { label: "Logotipas", name: "logotipas", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }

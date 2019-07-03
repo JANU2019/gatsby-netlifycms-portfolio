@@ -41,7 +41,13 @@ export const pageQuery = graphql`
           excerpt
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
-            logotipas
+            logotipas {
+              childImageSharp {
+                fluid(quality: 100, maxWidth: 500) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
