@@ -81,7 +81,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Roboto Slab`,
+            family: `Heebo`,
             subsets: [`latin`],
             variants: ["400", "700"],
           },

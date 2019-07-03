@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Layout, SEO, Image } from "@components"
+import { Layout, SEO, Card } from "@components"
 
 class BlogIndex extends React.Component {
   render() {
@@ -11,15 +11,16 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <div className="portfolio-grid">
-          {posts.map(({ node }) => {
-            console.log(node.frontmatter.logotipas)
-            return (
-              <div key={node.frontmatter.logotipas}>
-                <Image filename={node.frontmatter.logotipas} />
-              </div>
-            )
-          })}
+        <div className="container">
+          <div className="portfolio-grid">
+            {posts.map(({ node }) => {
+              return (
+                <div key={node.frontmatter.logotipas}>
+                  <Card filename={node.frontmatter.logotipas} />
+                </div>
+              )
+            })}
+          </div>
         </div>
       </Layout>
     )

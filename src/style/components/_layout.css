@@ -1,15 +1,27 @@
 html {
   font-family: var(--main-font);
+  background-color: var(--white);
 }
 
 .container {
+  width: 60vw;
   margin: 0 auto;
-  width: var(--container-width);
 }
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
+  grid-gap: 1rem;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 800px) {
+  .container {
+    width: 90vw;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

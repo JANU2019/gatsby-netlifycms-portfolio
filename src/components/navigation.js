@@ -3,27 +3,46 @@ import { Link } from "gatsby"
 
 const Navigation = () => {
   return (
-    <nav className="nav">
-      <Link to="/" className="link-no-style">
-        <h1 className="nav--title">Janul Portfolio</h1>
-      </Link>
-      <ul className="nav--links">
-        <li className="nav--links__item">
-          <Link to="/" className="link-no-style" activeClassName="active-link">
-            /pagrindis
+    <div className="container">
+      <nav className="nav">
+        <div className="nav--logo">
+          <Link to="/" className="nav--logo__link">
+            Janul Portfolio
           </Link>
-        </li>
-        <li className="nav--links__item">
-          <Link
-            to="/susisiekti"
-            className="link-no-style"
-            activeClassName="active-link"
-          >
-            /susisiekti
-          </Link>
-        </li>
-      </ul>
-    </nav>
+        </div>
+        <div className="nav-links__wrapper">
+          <ul className="nav--links">
+            <li className="nav--links__item">
+              <Link
+                to="/"
+                className="link-no-style"
+                activeClassName="active-link"
+              >
+                Pagrindinis
+              </Link>
+            </li>
+            <li className="nav--links__item">
+              <Link
+                to="/apie"
+                className="link-no-style"
+                activeClassName="active-link"
+              >
+                Apie Mane
+              </Link>
+            </li>
+            <li className="nav--links__item">
+              <Link
+                to="/susisiekti"
+                className="link-no-style"
+                activeClassName="active-link"
+              >
+                Susisiekti
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   )
 }
 

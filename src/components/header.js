@@ -1,11 +1,10 @@
 import React from "react"
-import { Navigation, Hero } from "@components"
+import { Navigation } from "@components"
 
 const Header = () => {
   return (
     <header>
       <Navigation />
-      <Hero />
     </header>
   )
 }

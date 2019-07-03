@@ -2,7 +2,7 @@ import Header from "./header"
 import Layout from "./layout"
 import SEO from "./seo"
 import Navigation from "./navigation"
-import Hero from "./hero"
 import Image from "./image"
+import Card from "./card"
 
-export { Header, Layout, SEO, Navigation, Hero, Image }
+export { Header, Layout, SEO, Navigation, Image, Card }
