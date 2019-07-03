@@ -4,14 +4,14 @@ import "../style/main.css"
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="wrapper">
       <Header />
       <main>{children}</main>
-      {/*<footer>
+      <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>*/}
+      </footer>
     </div>
   )
 }
