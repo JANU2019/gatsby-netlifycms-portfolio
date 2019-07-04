@@ -85,6 +85,11 @@ module.exports = {
             subsets: [`latin`],
             variants: ["400", "700"],
           },
+          {
+            family: `Karla`,
+            subsets: [`latin`],
+            variants: ["400", "700"],
+          },
         ],
       },
     },

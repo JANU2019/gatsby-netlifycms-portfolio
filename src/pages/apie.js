@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { Layout, SEO } from "@components"
+import { Layout, SEO, About } from "@components"
 
 class AboutPage extends React.Component {
   render() {
@@ -10,9 +10,9 @@ class AboutPage extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <div>
-          <SEO title="404: Not Found" />
-          <h1>APIE</h1>
+        <SEO title="Apie" />
+        <div className="container">
+          <About />
         </div>
       </Layout>
     )
