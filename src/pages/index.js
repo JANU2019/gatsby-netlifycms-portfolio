@@ -10,7 +10,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Pagrindinis" />
         <div className="container">
           <div className="portfolio-grid">
             {posts.map(({ node }) => {

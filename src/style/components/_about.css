@@ -1,22 +1,23 @@
 .about-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     grid-gap: 2rem;
 }
 
 .about--image {
     width: 100%;
-    grid-row: 1;
+    grid-row: 1 / 10;
     grid-column: 1 / 6;
 }
 
 .about--text {
-    grid-row: 1;
-    grid-column: 6 / -1;
+    grid-row: 2 / -1;
+    grid-column: 5 / -1;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 2rem;
     z-index: 2;
+    box-shadow: 0 0 2px #d4d4d4;
 }
 
 .about--text__heading {
@@ -31,12 +32,7 @@
 }
 
 @media (max-width: 1600px) {
-    .about--image {
-        grid-row: 1;
-    }
     .about--text {
-        grid-row: 1;
-        grid-column: 6 / -1;
         padding: 1rem;
     }
   }
