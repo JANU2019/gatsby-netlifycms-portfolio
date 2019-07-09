@@ -23,15 +23,6 @@ const Navigation = () => {
             </li>
             <li className="nav--links__item">
               <Link
-                to="/apie"
-                className="link-no-style"
-                activeClassName="active-link"
-              >
-                Apie Mane
-              </Link>
-            </li>
-            <li className="nav--links__item">
-              <Link
                 to="/susisiekti"
                 className="link-no-style"
                 activeClassName="active-link"
