@@ -7,8 +7,9 @@
 
 .contact--image {
     width: 100%;
-    grid-row: 1 / 20;
+    grid-row: 1 / 16;
     grid-column: 1 / 8;
+    box-shadow: 0 0 15px var(--grid-grey);
 }
 
 .contact--form {

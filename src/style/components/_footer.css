@@ -1,5 +1,14 @@
 footer {
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 0 0;
   font-size: 0.8rem;
   text-align: center;
+}
+
+.footer-link {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--light-grey);
 }

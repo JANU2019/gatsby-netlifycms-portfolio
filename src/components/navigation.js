@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { Image } from "@components"
 
 const Navigation = () => {
   return (
@@ -7,7 +8,7 @@ const Navigation = () => {
       <nav className="nav">
         <div className="nav--logo">
           <Link to="/" className="nav--logo__link">
-            Janul Portfolio
+            <Image filename="JANU.png"/>
           </Link>
         </div>
         <div className="nav-links__wrapper">
