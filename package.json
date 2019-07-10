@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "janu-portfolio-website",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Portfolio website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Evalda Burlingis <e.burlingis@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
