@@ -17,7 +17,7 @@ const Contact = () => {
                     <br/>
                     <input type="email" name="_replyto" className="form--input" placeholder="El. Paštas"/>
                     <br/>
-                    <input type="text" name="_replyto" className="form--input" placeholder="Žinutė"/>
+                    <input type="text" name="message" className="form--input" placeholder="Žinutė"/>
                     <br/>
                     <input type="submit" value="Send" />
                     <input type="hidden" name="_next" value="https://stupefied-davinci-acf7cf.netlify.com/" />
