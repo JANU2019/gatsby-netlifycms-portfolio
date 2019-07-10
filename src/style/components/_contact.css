@@ -47,6 +47,22 @@ form {
 }
 
 
+.submit-button {
+    margin-top: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--light);
+    padding: 8px 24px;
+    transition: all 250ms ease-in;
+}
+
+.submit-button:hover {
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    color: var(--white);
+    box-shadow: 0 0 15px var(--grid-grey);
+}
+
 @media (max-width: 1600px) {
     .contact--form {
         grid-row: 2 / 20;

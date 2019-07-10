@@ -11,7 +11,7 @@ const Contact = () => {
                 <h1 className="contact--form__heading">
                     Dirbkime kartu!
                 </h1>
-                <form action="https://formspree.io/evabur@icloud.com" method="POST">
+                <form action="https://formspree.io/linaluna6@gmail.com" method="POST">
                     <input type="hidden" name="_language" value="lt" />
                     <input type="text" name="name" className="form--input" placeholder="Jūsų vardas"/>
                     <br/>
@@ -19,8 +19,8 @@ const Contact = () => {
                     <br/>
                     <input type="text" name="message" className="form--input" placeholder="Žinutė"/>
                     <br/>
-                    <input type="submit" value="Send" />
-                    <input type="hidden" name="_next" value="https://stupefied-davinci-acf7cf.netlify.com/" />
+                    <input type="submit" value="Siųsti" className="submit-button"/>
+                    <input type="hidden" name="_next" value="//stupefied-davinci-acf7cf.netlify.com/" />
                 </form>
             </div>
         </div>
